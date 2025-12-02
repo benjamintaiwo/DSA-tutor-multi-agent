@@ -1,0 +1,24 @@
+{
+    "test_suite": "tutor_agent_evaluation",
+    "description": "Comprehensive evaluation suite for AI DS & Algorithm Tutor",
+    "version": "1.0",
+    "metrics": [
+        {
+            "name": "response_match_score",
+            "description": "Measures how well the agent's response matches expected behavior",
+            "weight": 0.4
+        },
+        {
+            "name": "tool_trajectory_score",
+            "description": "Evaluates correct usage and sequence of tools",
+            "weight": 0.3
+        },
+        {
+            "name": "socratic_method_score",
+            "description": "Measures adherence to Socratic teaching principles",
+            "weight": 0.3
+        }
+    ],
+    "log_level": "DEBUG",
+    "trace_enabled": true
+}

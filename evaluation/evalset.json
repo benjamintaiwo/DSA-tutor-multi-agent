@@ -1,0 +1,114 @@
+{
+    "test_cases": [
+        {
+            "id": "greeting_basic",
+            "name": "Basic Greeting",
+            "input": "Hi, I want to learn algorithms.",
+            "expected_keywords": [
+                "help",
+                "tutor",
+                "start",
+                "welcome"
+            ],
+            "expected_tools": [],
+            "expected_behavior": "friendly_greeting",
+            "difficulty": "easy"
+        },
+        {
+            "id": "fetch_problem_explicit",
+            "name": "Explicit Problem Request",
+            "input": "Give me the two-sum problem.",
+            "expected_keywords": [
+                "problem",
+                "two",
+                "sum"
+            ],
+            "expected_tools": [
+                "fetch_leetcode_problem"
+            ],
+            "expected_tool_args": {
+                "slug": "two-sum"
+            },
+            "expected_behavior": "tool_usage_correct",
+            "difficulty": "medium"
+        },
+        {
+            "id": "fetch_problem_random",
+            "name": "Random Problem Request",
+            "input": "Give me a random hard problem.",
+            "expected_keywords": [
+                "problem",
+                "difficulty"
+            ],
+            "expected_tools": [
+                "fetch_leetcode_problem"
+            ],
+            "expected_tool_args": {
+                "difficulty": "Hard"
+            },
+            "expected_behavior": "tool_usage_correct",
+            "difficulty": "medium"
+        },
+        {
+            "id": "hint_request_socratic",
+            "name": "Hint Request (Socratic)",
+            "input": "I'm stuck on this problem, can you give me a hint?",
+            "expected_keywords": [
+                "hint",
+                "consider",
+                "think",
+                "what if",
+                "try"
+            ],
+            "expected_tools": [],
+            "expected_behavior": "socratic_hint",
+            "anti_patterns": [
+                "here is the solution",
+                "the answer is",
+                "just do this"
+            ],
+            "difficulty": "hard"
+        },
+        {
+            "id": "mode_switch_interview",
+            "name": "Switch to Interview Mode",
+            "input": "Interview me on a coding problem.",
+            "expected_keywords": [
+                "interview",
+                "question",
+                "solve"
+            ],
+            "expected_tools": [
+                "fetch_leetcode_problem"
+            ],
+            "expected_behavior": "mode_switch_interviewer",
+            "difficulty": "medium"
+        },
+        {
+            "id": "mode_switch_teaching",
+            "name": "Switch to Teaching Mode",
+            "input": "I want to teach you about binary search.",
+            "expected_keywords": [
+                "teach",
+                "explain",
+                "understand"
+            ],
+            "expected_tools": [],
+            "expected_behavior": "mode_switch_student",
+            "difficulty": "medium"
+        },
+        {
+            "id": "complexity_analysis",
+            "name": "Time Complexity Question",
+            "input": "What is the time complexity of bubble sort?",
+            "expected_keywords": [
+                "O(n",
+                "complexity",
+                "quadratic"
+            ],
+            "expected_tools": [],
+            "expected_behavior": "technical_explanation",
+            "difficulty": "easy"
+        }
+    ]
+}
