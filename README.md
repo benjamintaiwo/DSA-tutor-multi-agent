@@ -81,9 +81,9 @@ python3 main.py
 
 The tutor will automatically fall back to in-memory storage if Vertex AI is not available.
 
-## Capstone Requirements (Kaggle 5-Day Course)
-- ✅ Uses `google.adk` (LlmAgent, Gemini, Sessions, Memory)
-- ✅ Integrates external tool (LeetCode API)
-- ✅ Implements state management (TeachingOrchestrator)
-- ✅ Demonstrates memory persistence (VertexAiMemoryBankService)
-- ✅ Shows adaptive behavior (Skill Module selection based on weaknesses)
+## Google AI Course Capstone Requirements
+-  Uses `google.adk` (LlmAgent, Gemini, Sessions, Memory)
+-  Integrates external tool (LeetCode API)
+-  Implements state management (TeachingOrchestrator)
+-  Demonstrates memory persistence (VertexAiMemoryBankService)
+-  Shows adaptive behavior (Skill Module selection based on weaknesses)
